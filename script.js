@@ -93,12 +93,7 @@ $(document).ready(function(){
     });
     $('#divide').click(function(){
        if(error == 0){
-        //    if(document.forms.result.value.charAt(document.forms.result.value.length-1) == '+' || document.forms.result.value.charAt(document.forms.result.value.length-1) == '-' || document.forms.result.value.charAt(document.forms.result.value.length-1) == '*' || document.forms.result.value.charAt(document.forms.result.value.length-1) == '/'){
-        //         document.forms.result.value.replace(charAt(document.forms.result.value.length-1), "/");
-        //    }
-        //    else{
                 document.forms.result.value += '/';
-        //    }
         }
         else{
             alert("Please press delete or clear button to continue");
@@ -195,21 +190,4 @@ $(document).ready(function(){
         }
         });
 })
-// function del(status){
-//     var exp = document.forms.result.value;
-//     if( document.forms.result.value == "ERROR!!")
-//     {
-//         document.forms.result.value = "";
-//         status=0;
-//     }
-//     else{
-//         if(exp.substring(0, exp.length-1) == '(' && status == 1){
-//             status = 0;
-//         }
-//         else if(exp.substring(0, exp.length-1) == ')' && status == 0){
-//             status = 1;
-//         } 
-//         document.forms.result.value = exp.substring(0, exp.length-1);
-//     }
-// }
 
