@@ -1,5 +1,6 @@
 let status = 0;
 let error = 0;
+let temp = "";
 
 $(document).ready(function(){
     $('#one').click(function(){
@@ -159,6 +160,7 @@ $(document).ready(function(){
             alert("Please enter any numbers to continue");
         }else{
             try {
+                temp = document.forms.result.value;
                 document.forms.equation.value = temp + ' =';
                 document.forms.result.value = eval(document.forms.result.value);
             } catch {
